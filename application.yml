@@ -7,3 +7,7 @@ management:
     export:
       prometheus:
         enabled: true
+    tags:
+      application: ${spring.application.name}
+  instance:
+    prefer-ip-address: true
